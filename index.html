@@ -39,3 +39,51 @@
           
   </body>
 </html>
+
+  <!DOCTYPE html>
+<html>
+<style>
+	
+    article {border : dotted 2px orange;}
+	#monPara {color:red;}
+    .pair {color:orange;}
+    .impair {color:blue;}
+    .souligner {text-decoration : underline;}
+    code { color: rgb (240,240,240);background : darkgrey;border : double 10px lightgray;padding : 15px;border-radius : 10px}
+    .bo, .bf {color:yellow;}
+    .bo::before { content : "<"} 
+    .bf::before { content : "</"}
+    .bo::after { content : ">"}
+    .bf::after { content : ">"}
+    .citation::before, .citation::after { content : '"';} 
+    .citation:active {color: green;}
+    article p:nth_child(2) { border : solid black 10px;}
+</style>
+<head><!-- Ceci est un commentaire -->
+<title>TP 3 - Entrainement au CSS</title>
+</head>
+<body>
+
+    <header>
+        <h1>titre 1 de la page</h1>
+        <p class="impair">paragraphe 1</p>
+        <p id="monPara" class = "pair">paragraphe 2</p>
+        <p  class = "pair">paragraphe 3</p>
+        <p  class = "impair">paragraphe 4</p>
+        <p  class = "citation">citation paragraphe 5</p>
+    </header>
+
+<section>
+
+<article>
+    <p class="impair">paragraphe 1</p>
+    <p id="monPara" class = "pair">paragraphe 2</p>
+    <p  class = "souligner">paragraphe 3</p>
+    <p>paragraphe 4</p>
+    <code><!-- &lt;p&gt; donne <p> --> <span class="bo">p</span> Ceci est un texte <span class="bf">p</span> </code>
+</article>
+
+</section>
+
+</body>
+</html>
