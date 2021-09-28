@@ -40,7 +40,7 @@
   </body>
 </html>
 
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <style>
 	
@@ -58,6 +58,9 @@
     .citation::before, .citation::after { content : '"';} 
     .citation:active {color: green;}
     article p:nth_child(2) { border : solid black 10px;}
+    input[type=text] {width: 100px;-webkit-transition: width .35s ease-in-out;transition: width .35s ease-in-       out;}
+	input[type=text]:focus {width: 250px;}
+    
 </style>
 <head><!-- Ceci est un commentaire -->
 <title>TP 3 - Entrainement au CSS</title>
@@ -65,13 +68,14 @@
 <body>
 
     <header>
-        <h1>titre 1 de la page</h1>
+        <h1>TP 3 - Entrainement au CSS</h1>
         <p class="impair">paragraphe 1</p>
         <p id="monPara" class = "pair">paragraphe 2</p>
         <p  class = "pair">paragraphe 3</p>
         <p  class = "impair">paragraphe 4</p>
         <p  class = "citation">citation paragraphe 5</p>
     </header>
+    
 
 <section>
 
@@ -80,7 +84,9 @@
     <p id="monPara" class = "pair">paragraphe 2</p>
     <p  class = "souligner">paragraphe 3</p>
     <p>paragraphe 4</p>
-    <code><!-- &lt;p&gt; donne <p> --> <span class="bo">p</span> Ceci est un texte <span class="bf">p</span> </code>
+    <code><!-- &lt;p&gt; donne <p> --> <span class="bo">p</span> Ceci est un texte <span class="bf">p</span>
+    </code>
+    <p> Search: <input type="text" name="search"> </p>
 </article>
 
 </section>
